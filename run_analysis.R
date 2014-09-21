@@ -13,7 +13,6 @@ names <- as.list(select(features,2))
 #activity_labels.txt: names of the activities
 activities <- read.table("activity_labels.txt")
 activities <- tbl_df(activities)
-act <- as.list(select(activities,2))
 
 #Import test dataset with raw readings
 data <- read.table("test/X_test.txt",header = F,sep = "")
